@@ -2,21 +2,21 @@
     <v-app dark>
         <v-toolbar dark color="dark" style="position:absolute;top:0;opacity:0.7;z-index:1000; ">
 
-            <v-toolbar-title id="logoText">frank</v-toolbar-title>
+            <v-toolbar-title id="logoText">frankPrint</v-toolbar-title>
             <!--<div id="logoButtons">
-                <v-btn icon>
-                    <v-icon>search</v-icon>
-                </v-btn>
-                <v-btn icon>
-                    <v-icon>apps</v-icon>
-                </v-btn>
-                <v-btn icon>
-                    <v-icon>refresh</v-icon>
-                </v-btn>
-                <v-btn icon>
-                    <v-icon>more_vert</v-icon>
-                </v-btn>
-            </div>-->
+            <v-btn icon>
+                <v-icon>search</v-icon>
+            </v-btn>
+            <v-btn icon>
+                <v-icon>apps</v-icon>
+            </v-btn>
+            <v-btn icon>
+                <v-icon>refresh</v-icon>
+            </v-btn>
+            <v-btn icon>
+                <v-icon>more_vert</v-icon>
+            </v-btn>
+        </div>-->
             <div id="logoContacts">
                 <div style="display:flex;">
                     <svg height="45px" width="45px">
@@ -24,8 +24,6 @@
                     </svg>
                     <svg version="1.1" id="Layer_1" height="40px" width="40px" x="0px" y="0px"
                          viewBox="0 0 551.034 551.034" style="enable-background:new 0 0 551.034 551.034;" xml:space="preserve">
-
-	
                     <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">
                     <stop offset="0" style="stop-color:#E09B3D" />
 
@@ -52,10 +50,6 @@
 
 
 
-
-
-
-	
                     <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">
                     <stop offset="0" style="stop-color:#E09B3D" />
 
@@ -80,10 +74,6 @@
 
 
 
-
-
-
-	
                     <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="418.31" y1="4.57" x2="418.31" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">
                     <stop offset="0" style="stop-color:#E09B3D" />
 
@@ -104,6 +94,8 @@
 	</linearGradient>
                     <circle style="fill:url(#SVGID_3_);" cx="418.31" cy="134.07" r="34.15" />
 
+
+
 </svg>
 
                     <div>
@@ -115,7 +107,7 @@
 
                 </div>
             </div>
-            
+
         </v-toolbar>
 
 
@@ -133,7 +125,7 @@
                                dark
                                large
                                href="/pre-made-themes">
-                            Get Started
+                            Наши расценки
                         </v-btn>
                     </v-layout>
                 </v-parallax>
@@ -145,7 +137,22 @@
                           class="my-0"
                           align-center>
 
-                    <v-flex xs6>
+                    <v-flex>
+                        <div>
+                            <div class="row">
+
+                                <div class="large-8 medium-8 columns">
+                                    <div class="company-info" style="text-align: center;">
+                                     <h1>О компании, наши приемущества
+                                     </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
                         <div class="advantages-container clearfix">
                             <div class="advantage">
                                 <div class="advantage-content">
@@ -154,8 +161,8 @@
                                             <div class="advantage-content-img advantage-content-img-1"></div>
                                         </div>
                                         <div class="large-10 medium-10 columns">
-                                            <h6>ОПЫТ</h6>
-                                            Компания «Цифровая печать» 15 лет на рынке печати, мы гордимся накопленным опытом, выработанным комплексным подходом к решению задач и высоким профессионализмом сотрудников!
+                                            <h6>Собственное производство</h6>
+                                            fdsfsdfffffffffffdsfsdfffffffffffdsfsdfffffffffffdsfsdfffffffffffdsfsdfffffffffffdsfsdfffffffffffdsfsdffffffffff
                                         </div>
                                     </div>
                                 </div>
@@ -167,9 +174,9 @@
                                             <div class="advantage-content-img advantage-content-img-2">
                                             </div>
                                         </div>  <div class="large-10 medium-10 columns">
-                                            <h6>ПОЛНЫЙ СПЕКТР УСЛУГ</h6>
-                                            Производственные мощности укомплектованы современным оборудованием для  допечатной подготовки, процесса печати и послепечатной полиграфической обработки. Для разработки макетов или корпоративного стиля печатной продукции для вашей компании мы также предлагаем услуги профессиональных  дизайнеров.
-                                        </div>
+    <h6>Быстрые сроки без вреда качеству</h6>
+    fdsfsdfffffffffffdsfsdfffffffffffdsfsdfffffffffffdsfsdfffffffffffdsfsdfffffffffffdsfsdfffffffffffdsfsdffffffffff
+</div>
                                     </div>
                                 </div>
                             </div>
@@ -181,8 +188,8 @@
                                             </div>
                                         </div>
                                         <div class="large-10 medium-10 columns">
-                                            <h6>МЫ - ПРОИЗВОДИТЕЛИ</h6>
-                                            Большинство предложений на рынке полиграфии – посредники, мы же имеем собственный полностью укомплектованный парк печатного оборудования для полного производственного цикла печати любым способом.
+                                            <h6>Доставка</h6>
+                                            fdsfsdfffffffffffdsfsdfffffffffffdsfsdfffffffffffdsfsdfffffffffffdsfsdfffffffffffdsfsdfffffffffffdsfsdffffffffff
                                         </div>
                                     </div>
                                 </div>
@@ -195,8 +202,8 @@
                                             </div>
                                         </div>
                                         <div class="large-10 medium-10 columns">
-                                            <h6>ОПЕРАТИВНОСТЬ</h6>
-                                            Мы идем в ногу с современным темпом развития  бизнеса и готовы выполнить заказ в кратчайшие сроки. Мы гарантируем оперативное исполнение заказа при выполнении оговариваемых требований к печати.
+                                            <h6>Услуги дизайна</h6>
+                                            fdsfsdfffffffffffdsfsdfffffffffffdsfsdfffffffffffdsfsdfffffffffffdsfsdfffffffffffdsfsdfffffffffffdsfsdffffffffff
                                         </div>
                                     </div>
                                 </div>
@@ -205,18 +212,36 @@
                     </v-flex>
                 </v-layout>
             </section>
-
             <section>
-                <v-parallax src="assets/section.jpg" height="380">
-                    <v-layout column align-center justify-center>
-                        <div class="headline white--text mb-3 text-xs-center">Web development has never been easier</div>
-                        <em>Kick-start your application today</em>
-                        <v-btn class="blue lighten-2 mt-5"
-                               dark
-                               large
-                               href="/pre-made-themes">
-                            Get Started
-                        </v-btn>
+                <v-parallax src="assets/section.jpg" height="500">
+                    <v-layout column align-center >
+
+                        <h1 style="font-size: 40; color: black;">Наша продукция и услуги</h1>
+                        <div class="gradient grpelem" id="u2623"></div>
+                        <v-tabs icons-and-text centered dark color="grey" style="margin-top:20">
+                            <v-tabs-slider color="yellow"></v-tabs-slider>
+                            <v-tab href="#tab-1">
+                                Толствоки
+                            </v-tab>
+                            <v-tab href="#tab-2">
+                                Майки
+                            </v-tab>
+                            <v-tab href="#tab-3">
+                                Разное
+                            </v-tab>
+                            <v-tab-item v-for="i in 3"
+                                        :key="i"
+                                        :id="'tab-' + i">
+                                <v-card flat>
+                                    <v-card-text>  <span v-html="text[i-1]"></span></v-card-text>
+                                   
+
+
+
+                                </v-card>
+                            </v-tab-item>
+                        </v-tabs>
+
                     </v-layout>
                 </v-parallax>
             </section>
@@ -227,22 +252,20 @@
                         <v-flex xs12 sm4>
                             <v-card class="elevation-0 transparent">
                                 <v-card-title primary-title class="layout justify-center">
-                                    <div class="headline">Company info</div>
+                                    <div class="headline">О компании</div>
                                 </v-card-title>
                                 <v-card-text>
-                                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                                    Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
+                                   Инфа о компании(пару предложений)
                                 </v-card-text>
                             </v-card>
                         </v-flex>
                         <v-flex xs12 sm4 offset-sm1>
                             <v-card class="elevation-0 transparent">
                                 <v-card-title primary-title class="layout justify-center">
-                                    <div class="headline">Contact us</div>
+                                    <div class="headline">Свяжитесь с нами</div>
                                 </v-card-title>
                                 <v-card-text>
-                                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
+                                    Немного инфы(юр адрес и тд)
                                 </v-card-text>
                                 <v-list class="transparent">
                                     <v-list-tile>
@@ -250,7 +273,7 @@
                                             <v-icon class="blue--text text--lighten-2">phone</v-icon>
                                         </v-list-tile-action>
                                         <v-list-tile-content>
-                                            <v-list-tile-title>777-867-5309</v-list-tile-title>
+                                            <v-list-tile-title>+375 (29) 6-038-038</v-list-tile-title>
                                         </v-list-tile-content>
                                     </v-list-tile>
                                     <v-list-tile>
@@ -258,7 +281,7 @@
                                             <v-icon class="blue--text text--lighten-2">place</v-icon>
                                         </v-list-tile-action>
                                         <v-list-tile-content>
-                                            <v-list-tile-title>Chicago, US</v-list-tile-title>
+                                            <v-list-tile-title>Беларусь, Минск </v-list-tile-title>
                                         </v-list-tile-content>
                                     </v-list-tile>
                                     <v-list-tile>
@@ -266,7 +289,7 @@
                                             <v-icon class="blue--text text--lighten-2">email</v-icon>
                                         </v-list-tile-action>
                                         <v-list-tile-content>
-                                            <v-list-tile-title>john@vuetifyjs.com</v-list-tile-title>
+                                            <v-list-tile-title>frank.print@mail.ru</v-list-tile-title>
                                         </v-list-tile-content>
                                     </v-list-tile>
                                 </v-list>
@@ -277,112 +300,85 @@
             </section>
 
 
+            <v-layout row justify-center>
+                <v-dialog v-model="dialog" max-width="290">
+                    <v-card>
+                        <v-card-title class="headline">Заказать обратный звонок</v-card-title>
+                        <v-card-text>Введите ваш номер телефона и мы перезвоним вам в течении 5 минут.</v-card-text>
+                        <v-card-text>
+                            <v-text-field :mask="mask" v-model="valuePhone"></v-text-field>
+                        </v-card-text>
 
-
-
-                <v-speed-dial v-model="fab"
-                              :top="top"
-                              :bottom="bottom"
-                              :right="right"
-                              :left="left"
-                              :direction="direction"
-                              :open-on-hover="hover"
-                              :transition="transition">
-                    <v-btn slot="activator"
-                           v-model="fab"
-                           color="blue darken-2"
-                           dark
-                           fab>
-                        <v-icon>account_circle</v-icon>
-                        <v-icon>close</v-icon>
-                    </v-btn>
-                    <v-btn fab
-                           dark
-                           small
-                           color="green">
-                        <v-icon>edit</v-icon>
-                    </v-btn>
-                    <v-btn fab
-                           dark
-                           small
-                           color="indigo">
-                        <v-icon>add</v-icon>
-                    </v-btn>
-                    <v-btn fab
-                           dark
-                           small
-                           color="red">
-                        <v-icon>delete</v-icon>
-                    </v-btn>
-                </v-speed-dial>
-
-
-
+                        <v-card-actions>
+                            <v-spacer></v-spacer>
+                            <v-btn color="green darken-1" flat="flat" @click.native="dialog = false">Disagree</v-btn>
+                            <v-btn color="green darken-1" flat="flat" @click.native="dialog = false">Agree</v-btn>
+                        </v-card-actions>
+                    </v-card>
+                </v-dialog>
+            </v-layout>
 
             <v-footer height="auto">
                 <v-card flat
                         tile
-                        class="indigo lighten-1 white--text text-xs-center">
-                    <v-card-text>
-                        <v-btn v-for="icon in icons"
-                               :key="icon"
-                               icon
-                               class="mx-3 white--text">
-                            <v-icon size="24px">{{ icon }}</v-icon>
-                        </v-btn>
-                    </v-card-text>
-                    <v-card-text class="white--text pt-0">
-                        Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                    </v-card-text>
+                        class="indigo lighten-1 white--text text-xs-center" style="width:100%"> 
+
                     <v-card-text class="white--text">
-                        &copy;2018 — <strong>Vuetify</strong>
+                        какая-нибудь инфа
                     </v-card-text>
                 </v-card>
             </v-footer>
         </v-content>
+        <fab :position="position"
+             :bg-color="bgColor"
+             :main-icon="mainIcon"
+             :actions="fabActions"
+             @message="message"
+             @dialogAction="dialogAction"></fab>
     </v-app>
 </template>
 
 <script>
+    import fab from 'vue-fab'
+    import verticalTabs from '../components/verticalTabs.vue'
     export default {
-        data: () => ({
-            direction: 'top',
-            fab: false,
-            fling: false,
-            hover: false,
-            tabs: null,
-            top: false,
-            right: true,
-            bottom: true,
-            left: false,
-            transition: 'slide-y-reverse-transition',
-            icons: ['fab fa-facebook', 'fab fa-twitter', 'fab fa-google-plus', 'fab fa-linkedin', 'fab fa-instagram']
-        }),
-
-        computed: {
-            activeFab() {
-                switch (this.tabs) {
-                    case 'one': return { 'class': 'purple', icon: 'account_circle' }
-                    case 'two': return { 'class': 'red', icon: 'edit' }
-                    case 'three': return { 'class': 'green', icon: 'keyboard_arrow_up' }
-                    default: return {}
-                }
+        data() {
+            return {
+                mask:'+375(##)###-##-##',
+                valuePhone: '+375',
+                dialog: false,
+                mainIcon: 'call',
+                tabs: null,
+                text: ['<table class="table table-sm table-dark"> <thead> <tr> <th scope="col">#</th> <th scope="col">First</th> <th scope="col">Last</th> <th scope="col">Handle</th> </tr> </thead> <tbody> <tr> <th scope="row">1</th> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr> <tr> <th scope="row">2</th> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr> <tr> <th scope="row">3</th> <td colspan="2">Larry the Bird</td> <td>@twitter</td> </tr> </tbody></table>'
+                ],
+                bgColor: '#778899',
+                position: 'bottom-right',
+                fabActions: [
+                    {
+                        name: 'message',
+                        icon: 'message'
+                    },
+                    {
+                        name: 'dialogAction',
+                        icon: 'call'
+                    }
+                ]
             }
         },
-         watch: {
-      top (val) {
-        this.bottom = !val
-      },
-      right (val) {
-        this.left = !val
-      },
-      bottom (val) {
-        this.top = !val
-      },
-      left (val) {
-        this.right = !val
-      }
-    }
+        components: {
+            fab,
+            verticalTabs
+        },
+        methods: {
+            message() {
+                    var widget_id = 'm7un9oHZWF'; var d = document; var w = window; function l() {
+                        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/' + widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);
+                    } if (d.readyState == 'complete') { l(); } else { if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } }
+            },
+            dialogAction() {
+                this.dialog = true;
+            }
+        }   
         }
     
 </script>
