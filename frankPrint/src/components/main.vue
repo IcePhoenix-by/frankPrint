@@ -21,7 +21,7 @@
         </v-toolbar>-->
 
 
-        <header  style="position:absolute;top:0;background:rgba(0,0,0,.4);z-index:1000;">
+        <header  style="position:absolute;top:0;background:rgba(0, 0, 0, 0.61);z-index:1000;">
             <nav class="container">
                 <div  id="logoText">
                     frankPrint
@@ -40,9 +40,8 @@
                             </svg>
                             <svg version="1.1" id="Layer_1" height="40px" width="40px" x="0px" y="0px" viewBox="0 0 551.034 551.034" style="enable-background:new 0 0 551.034 551.034;" xml:space="preserve"> <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)"> <stop offset="0" style="stop-color:#E09B3D" /> <stop offset="0.3" style="stop-color:#C74C4D" /> <stop offset="0.6" style="stop-color:#C21975" /> <stop offset="1" style="stop-color:#7024C4" /></linearGradient> <path style="fill:url(#SVGID_1_);" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z" /> <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)"> <stop offset="0" style="stop-color:#E09B3D" /> <stop offset="0.3" style="stop-color:#C74C4D" /> <stop offset="0.6" style="stop-color:#C21975" /> <stop offset="1" style="stop-color:#7024C4" /></linearGradient> <path style="fill:url(#SVGID_2_);" d="M275.517,133C196.933,133,133,196.933,133,275.516s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083C362.6,323.611,323.611,362.6,275.517,362.6z" /> <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="418.31" y1="4.57" x2="418.31" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)"> <stop offset="0" style="stop-color:#E09B3D" /> <stop offset="0.3" style="stop-color:#C74C4D" /> <stop offset="0.6" style="stop-color:#C21975" /> <stop offset="1" style="stop-color:#7024C4" /></linearGradient> <circle style="fill:url(#SVGID_3_);" cx="418.31" cy="134.07" r="34.15" /></svg>
 
-                            <div>
+                            <div style="color:white;">
                                 <div>+375 (29) 6-038-038</div>
-
                                 <div>frank.print@mail.ru</div>
                             </div>
                         </div>
@@ -53,19 +52,26 @@
 
         <v-content>
             <section>
-                <v-parallax src="assets/hero.jpeg" height="600">
+                <v-parallax src="assets/section.jpg" height="600">
                     <v-layout column
                               align-center
                               justify-center
                               class="white--text">
-                        <img src="assets/vuetify.png" alt="Vuetify.js" height="200">
-                        <h1 class="white--text mb-2 display-1 text-xs-center">Parallax Template</h1>
-                        <div class="subheading mb-3 text-xs-center">Powered by Vuetify</div>
+                       
+
+                        <v-card color="blue-grey darken-2" class="white--text" style="max-width: 250px; align-self: flex-end; margin-right:20%">
+                            <v-card-title primary-title>
+                                <div class="headline">Надоели однотонные вещи? Хочешь разукрасить все свои вещи? Тогда тебе сюда.</div>
+                            </v-card-title>
+                        </v-card>
+                        <div>
+
+                        </div>
                         <v-btn class="blue lighten-2 mt-5"
                                dark
                                large
                                href="/pre-made-themes">
-                            Get Started
+                            Хочу принт!
                         </v-btn>
                     </v-layout>
                 </v-parallax>
@@ -73,39 +79,16 @@
 
             <section style="text-align: center;">
                 <div style="font-size:30px;margin-top:10px;">Фотогалерея</div>
-                <div class="gradient grpelem" style="display:inline-block;" id="u2623"></div>
-                <v-layout column>
-                    <v-flex xs12 sm1 offset-sm0>
-                        <v-card>
-                            <v-container fluid grid-list-xl>
-                                <v-layout row wrap>
-                                    <v-flex v-for="card in cards"
-                                            v-bind="{ [`xs${card.flex}`]: true }"
-                                            :key="card.title">
-                                        <v-card>
-                                            <v-card-media :src="card.src"
-                                                          height="200px">
-                                                <v-container fill-height fluid>
-                                                    <v-layout fill-height>
-                                                        <v-flex xs12 align-end flexbox>
-                                                            <span class="headline white--text" v-text="card.title"></span>
-                                                        </v-flex>
-                                                    </v-layout>
-                                                </v-container>
-                                            </v-card-media>
-
-                                        </v-card>
-                                    </v-flex>
-                                </v-layout>
-                            </v-container>
-                        </v-card>
-                    </v-flex>
-                </v-layout>
+                <photo-grid :box-height="'500px'" :box-width="'500px'" :excess-text="'+ {{count}}'" v-on:clickExcess="triggerClick">
+                    <img v-for="imahe in images" v-bind:src="imahe.url" />
+                </photo-grid>
             </section>
+
+
             <section id="SECTION_1">
                 <div id="DIV_2">
                     <h2 id="H2_3">
-                        See What Our Customers Are Saying
+                        Наши клиенты о нас
                     </h2>
                     <div id="DIV_4">
                         <div id="DIV_5">
@@ -115,15 +98,15 @@
                                         <source id="SOURCE_9" />
                                         <source id="SOURCE_10" />
                                         <source id="SOURCE_11" />
-                                        <img src="https://image.spreadshirtmedia.com/content/w_100,c_scale/v20/cms/ml/ratings/testimonials/girl" alt="Jennifer L." id="IMG_12" />
+                                        <img src="https://image.spreadshirtmedia.com/content/w_100,c_scale/v20/cms/ml/ratings/testimonials/girl" alt="Кристина Си" id="IMG_12" />
                                     </picture>
                                     <ul id="UL_13">
                                         <li id="LI_14">
-                                            Jennifer L.
+                                            Кристина Си
                                         </li>
                                     </ul>
                                     <div id="DIV_15">
-                                        <span id="SPAN_16">The T-Shirts are of very high quality. The site is easy to use, and the customer service and experience was the best I've ever had. I highly recommend Spreadshirt for any of their products.</span>
+                                        <span id="SPAN_16">У них реально заебись, лучшие футболки и худи, я стала успешной меня все начали любить(и всякой экспрессивной чуши)</span>
                                     </div>
                                 </div>
                                 <div id="DIV_17">
@@ -145,15 +128,15 @@
                                         <source id="SOURCE_26" />
                                         <source id="SOURCE_27" />
                                         <source id="SOURCE_28" />
-                                        <img src="https://image.spreadshirtmedia.com/content/w_100,c_scale/v20/cms/ml/ratings/testimonials/photographer" alt="Teresa M." id="IMG_29" />
+                                        <img src="https://image.spreadshirtmedia.com/content/w_100,c_scale/v20/cms/ml/ratings/testimonials/photographer" alt="Анжелика В." id="IMG_29" />
                                     </picture>
                                     <ul id="UL_30">
                                         <li id="LI_31">
-                                            Teresa M.
+                                            Анжелика В.
                                         </li>
                                     </ul>
                                     <div id="DIV_32">
-                                        <span id="SPAN_33">Really nice. Just received it and I'm happy to see how clean the print is and how soft the t-shirt is. I really like the neckline and the cut of the shirt.</span>
+                                        <span id="SPAN_33">Телка слева явно говорит годноту, полностью согласна</span>
                                     </div>
                                 </div>
                                 <div id="DIV_34">
@@ -175,15 +158,15 @@
                                         <source id="SOURCE_43" />
                                         <source id="SOURCE_44" />
                                         <source id="SOURCE_45" />
-                                        <img src="https://image.spreadshirtmedia.com/content/w_100,c_scale/v20/cms/ml/ratings/testimonials/man" alt="Perry M." id="IMG_46" />
+                                        <img src="https://image.spreadshirtmedia.com/content/w_100,c_scale/v20/cms/ml/ratings/testimonials/man" alt="Валера Вна." id="IMG_46" />
                                     </picture>
                                     <ul id="UL_47">
                                         <li id="LI_48">
-                                            Perry M.
+                                            Валера Вна.
                                         </li>
                                     </ul>
                                     <div id="DIV_49">
-                                        <span id="SPAN_50">The shirt is very soft. The print is clear. I've already washed several times and I don't see any evidence of it picking or peeling off.</span>
+                                        <span id="SPAN_50">Больше 3 думаю на первое время незачем</span>
                                     </div>
                                 </div>
                                 <div id="DIV_51">
@@ -208,33 +191,116 @@
             </section>
             <section>
 
-                
+                <v-layout column align-center>
+
+                    <h1 style="font-size: 40; color: black;">Наша продукция и услуги</h1>
+                    <div class="gradient grpelem" id="u2623"></div>
+                    <div>Мы компания которая предоставляет услуги печати на всевозможных вещах, тащи сюда любимую вещь, мы подумаем что с ней можно сделать.</div>
+                    <div>
+                        <div class="table-users">
+                            <div class="header">Толстовки/майки</div>
+
+                            <table cellspacing="0">
+                                <tr>
+                                    <th>Количество</th>
+                                    <th>Цены</th>
+                                    <th>Скидка</th>
+                                </tr>
+
+                                <tr>
+                                    <td>1-10</td>
+                                    <td>20$</td>
+                                    <td>20%</td>
+
+                                </tr>
 
 
+                                <tr>
+                                    <td>1-10</td>
+                                    <td>20$</td>
+                                    <td>20%</td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>1-10</td>
+                                    <td>20$</td>
+                                    <td>20%</td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>1-10</td>
+                                    <td>20$</td>
+                                    <td>20%</td>
+
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="table-users">
+                            <div class="header">Разное</div>
+
+                            <table cellspacing="0">
+                                <tr>
+                                    <th>Количество</th>
+                                    <th>Цены</th>
+                                    <th>Скидка</th>
+                                </tr>
+
+                                <tr>
+                                    <td>1-10</td>
+                                    <td>20$</td>
+                                    <td>20%</td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <td>1-10</td>
+                                    <td>20$</td>
+                                    <td>20%</td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>1-10</td>
+                                    <td>20$</td>
+                                    <td>20%</td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>1-10</td>
+                                    <td>20$</td>
+                                    <td>20%</td>
+
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </v-layout>
             </section>
 
-            <section>
+            <section style="background-color:lightgrey  ;">
                 <v-container grid-list-xl>
                     <v-layout row wrap justify-center class="my-5">
                         <v-flex xs12 sm4>
                             <v-card class="elevation-0 transparent">
                                 <v-card-title primary-title class="layout justify-center">
-                                    <div class="headline">Company info</div>
+                                    <div class="headline">О компании</div>
                                 </v-card-title>
                                 <v-card-text>
-                                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                                    Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
+                                    Инфа о компании(пару предложений)
                                 </v-card-text>
                             </v-card>
                         </v-flex>
                         <v-flex xs12 sm4 offset-sm1>
                             <v-card class="elevation-0 transparent">
                                 <v-card-title primary-title class="layout justify-center">
-                                    <div class="headline">Contact us</div>
+                                    <div class="headline">Свяжитесь с  нами</div>
                                 </v-card-title>
                                 <v-card-text>
-                                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
+                                    Немного инфы(юр адрес и тд)
                                 </v-card-text>
                                 <v-list class="transparent">
                                     <v-list-tile>
@@ -242,7 +308,7 @@
                                             <v-icon class="blue--text text--lighten-2">phone</v-icon>
                                         </v-list-tile-action>
                                         <v-list-tile-content>
-                                            <v-list-tile-title>777-867-5309</v-list-tile-title>
+                                            <v-list-tile-title>+375 (29) 6-038-038</v-list-tile-title>
                                         </v-list-tile-content>
                                     </v-list-tile>
                                     <v-list-tile>
@@ -250,7 +316,7 @@
                                             <v-icon class="blue--text text--lighten-2">place</v-icon>
                                         </v-list-tile-action>
                                         <v-list-tile-content>
-                                            <v-list-tile-title>Chicago, US</v-list-tile-title>
+                                            <v-list-tile-title>Беларусь, Минск </v-list-tile-title>
                                         </v-list-tile-content>
                                     </v-list-tile>
                                     <v-list-tile>
@@ -258,7 +324,7 @@
                                             <v-icon class="blue--text text--lighten-2">email</v-icon>
                                         </v-list-tile-action>
                                         <v-list-tile-content>
-                                            <v-list-tile-title>john@vuetifyjs.com</v-list-tile-title>
+                                            <v-list-tile-title>frank.print@mail.ru</v-list-tile-title>
                                         </v-list-tile-content>
                                     </v-list-tile>
                                 </v-list>
@@ -267,7 +333,26 @@
                     </v-layout>
                 </v-container>
             </section>
+            <v-layout row justify-center>
+                <v-dialog v-model="dialog" max-width="290">
+                    <v-card>
+                        <v-card-title class="headline">Заказать обратный звонок</v-card-title>
+                        <v-card-text>Введите ваш номер телефона и мы перезвоним вам в течении 5 минут.</v-card-text>
+                        <v-card-text>
+                            <v-text-field :mask="mask" v-model="valuePhone"></v-text-field>
+                        </v-card-text>
 
+                        <v-card-actions>
+                            <v-spacer></v-spacer>
+                            <v-btn color="green darken-1" flat="flat" @click.native="dialog = false">Disagree</v-btn>
+                            <v-btn color="green darken-1" flat="flat" @click.native="dialog = false">Agree</v-btn>
+                        </v-card-actions>
+                    </v-card>
+                </v-dialog>
+            </v-layout>
+            <section>
+
+            </section>
             <footer style="background: slateblue;">
                 <div class="container">
                     <div class="footer-col"><span>frankPrint @2018</span></div>
@@ -562,7 +647,7 @@
 </template>
 
 <script>
-
+    import photogrid from 'vue-photo-grid';
     import fab from 'vue-fab'
     import verticalTabs from '../components/verticalTabs.vue'
     export default {
@@ -575,11 +660,34 @@
                 mainIcon: 'call',
                 tabs: null,
                 text: ['<table class="table table-sm table-dark"> <thead> <tr> <th scope="col">#</th> <th scope="col">First</th> <th scope="col">Last</th> <th scope="col">Handle</th> </tr> </thead> <tbody> <tr> <th scope="row">1</th> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr> <tr> <th scope="row">2</th> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr> <tr> <th scope="row">3</th> <td colspan="2">Larry the Bird</td> <td>@twitter</td> </tr> </tbody></table>'
+                    ,'<table class="containerTable"><tbody><tr style="height: 23px;"><td style="height: 23px;">Количество&nbsp;</td><td style="height: 23px;">Цена за одну</td><td style="height: 23px;">Скидка</td></tr><tr style="height: 23px;"><td style="height: 23px;">1-10</td><td style="height: 23px;">20$</td><td style="height: 23px;">5%</td></tr><tr style="height: 23px;"><td style="height: 23px;">11-20</td><td style="height: 23px;">18$</td><td style="height: 23px;">10%</td></tr><tr style="height: 23px;"><td style="height: 23px;">21-100</td><td style="height: 23px;">15$</td><td style="height: 23px;">&nbsp;20%</td></tr></tbody></table>'
                 ],
-                cards: [
-                    {  src: '/assets/1.jpg', flex:1 },
-                    { src: '/assets/1.jpg', flex:1 },
-                    { src: '/assets/1.jpg', flex:1 },
+                images: [
+                    {
+                        title: "image 1",
+                        url: "assets/1.jpg"
+                    },
+                    {
+                        title: "image 2",
+                        url: "assets/2.jpg"
+
+
+
+                    }, {
+                        title: "image 3",
+                        url: "assets/3.jpg"
+
+
+                    }, {
+                        title: "image 4",
+                        url: "assets/4.jpg"
+                    }, {
+                        title: "image 5",
+                        url: "assets/5.jpg"
+                    }, {
+                        title: "image 6",
+                        url: "assets/1.jpg"
+                    }
                 ],
                 bgColor: '#778899',
                 position: 'bottom-right',
@@ -597,9 +705,13 @@
         },
         components: {
             verticalTabs,
-            fab
+            fab,
+            photogrid
         },
         methods: {
+            triggerClick() {
+                // Some code here...
+            },
             message() {
                     var widget_id = 'm7un9oHZWF'; var d = document; var w = window; function l() {
                         var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/' + widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);
