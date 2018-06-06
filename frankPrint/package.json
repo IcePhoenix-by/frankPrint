@@ -10,7 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "blueimp-md5": "^2.10.0",
@@ -24,8 +24,7 @@
     "numeric": "^1.2.6",
     "underscore.string": "^3.3.4",
     "vue": "^2.5.15",
-    "vue-cli": "^2.9.6",
-    "vue-loader": "^15.2.4",
+    "vue-loader": "^13.7.1",
     "vue-style-loader": "^3.1.2",
     "vue-template-compiler": "^2.5.15",
     "vuetify": "^1.0.18",
@@ -34,6 +33,7 @@
   },
   "dependencies": {
     "js-cookie": "^2.2.0",
+    "photo-grid": "^1.0.0",
     "vue-fab": "^2.1.4"
   }
 }
