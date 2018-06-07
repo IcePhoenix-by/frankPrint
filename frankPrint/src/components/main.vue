@@ -21,32 +21,39 @@
         </v-toolbar>-->
 
 
-        <header  style="position:absolute;top:0;background:rgba(0, 0, 0, 0.61);z-index:1000;">
+        <header  style="position:absolute;top:0;background:rgba(0, 0, 0, 0.61);z-index:1000; padding:0;">
             <nav class="container">
-                <div  id="logoText">
-                    frankPrint
+                
+
+                <div id="logoText" style="flex-grow: 1;display:flex;flex-direction:column;align-items:center;line-height:20px">
+
+                    <div>frank</div>
+
+                    <div style=" font-size: 20px; font-family:'Times New Roman'">print </div>
                 </div>
-                    <div class="nav-toggle"><span></span></div>
-                    <ul id="menu">
-                        <li><a href="">Наши работы</a></li>
-                        <li><a href="">Цены</a></li>
-                        <li><a href="">Напишите нам</a></li>
-                    </ul>
 
-                    <div id="logoContacts">
-                        <div style="display:flex;">
-                            <svg height="45px" width="45px">
-                                <use xlink:href="#vk" />
-                            </svg>
-                            <svg version="1.1" id="Layer_1" height="40px" width="40px" x="0px" y="0px" viewBox="0 0 551.034 551.034" style="enable-background:new 0 0 551.034 551.034;" xml:space="preserve"> <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)"> <stop offset="0" style="stop-color:#E09B3D" /> <stop offset="0.3" style="stop-color:#C74C4D" /> <stop offset="0.6" style="stop-color:#C21975" /> <stop offset="1" style="stop-color:#7024C4" /></linearGradient> <path style="fill:url(#SVGID_1_);" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z" /> <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)"> <stop offset="0" style="stop-color:#E09B3D" /> <stop offset="0.3" style="stop-color:#C74C4D" /> <stop offset="0.6" style="stop-color:#C21975" /> <stop offset="1" style="stop-color:#7024C4" /></linearGradient> <path style="fill:url(#SVGID_2_);" d="M275.517,133C196.933,133,133,196.933,133,275.516s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083C362.6,323.611,323.611,362.6,275.517,362.6z" /> <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="418.31" y1="4.57" x2="418.31" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)"> <stop offset="0" style="stop-color:#E09B3D" /> <stop offset="0.3" style="stop-color:#C74C4D" /> <stop offset="0.6" style="stop-color:#C21975" /> <stop offset="1" style="stop-color:#7024C4" /></linearGradient> <circle style="fill:url(#SVGID_3_);" cx="418.31" cy="134.07" r="34.15" /></svg>
+                <div class="nav-toggle"><span></span></div>
+                <ul id="menu" style="align-items:center; justify-content: center;">
+                    <li><a href="">Наши работы</a></li>
+                    <li><a href="">Цены</a></li>
+                    <li><a href="">Напишите нам</a></li>
+                </ul>
 
-                            <div style="color:white;">
-                                <div>+375 (29) 6-038-038</div>
-                                <div>frank.print@mail.ru</div>
-                            </div>
+                <div id="logoContacts">
+                    <div style="display:flex;align-items:center;">
+                        <svg height="45px" width="45px">
+                            <use xlink:href="#vk" />
+                        </svg>
+                        <svg viewBox="0 0 50 50" fill="#ffffff" width="50px" height="50px">
+                            <path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible" fill="#ffffff" />
+                        </svg>
+                        <div style="color:white;font-weight:bold;">
+                            <div>+375 (29) 6-038-038</div>
+                            <div>frank.print@mail.ru</div>
                         </div>
                     </div>
-                
+                </div>
+
             </nav>
         </header>
 
