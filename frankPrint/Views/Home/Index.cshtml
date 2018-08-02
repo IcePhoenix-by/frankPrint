@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Адаптивная вёрстка сайта</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
 
 </head>
 <body>
@@ -118,8 +119,16 @@
         color: white;
       
     }
-
-
+    .v-toolbar__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .v-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .tooltip, .tooltip > span {
         height: auto;
     }

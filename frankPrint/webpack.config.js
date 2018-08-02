@@ -1,26 +1,25 @@
-﻿var path = require('path')
+﻿const path = require('path')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 var webpack = require('webpack')
-
 module.exports = {
+    mode: 'development',
     entry: './src/entries/page.js',
     output: {
         path: path.join(__dirname, 'wwwroot/dist'),
         filename: '[name].js'
     },
     module: {
+       
         rules: [
             {
                 test: /\.vue$/,
-                loader: 'vue-loader',
-                options: {
-                    loaders: {
-                    }
-                }
+                loader: 'vue-loader'
             },
+            // это будет применяться к файлам `.js`
+            // А ТАКЖЕ к секциям `<script>` внутри файлов `.vue`
             {
                 test: /\.js$/,
-                loader: 'babel-loader',
-                exclude: /node_modules/
+                loader: 'babel-loader'
             },
             {
                 test: /\.(png|jpg|gif|svg)$/,
@@ -28,9 +27,22 @@ module.exports = {
                 options: {
                     name: '[name].[ext]?[hash]'
                 }
+            },
+            // это будет применяться к файлам `.css`
+            // А ТАКЖЕ к секциям `<style>` внутри файлов `.vue`
+            {
+                test: /\.css$/,
+                use: [
+                    'vue-style-loader',
+                    'css-loader'
+                ]
             }
         ]
     },
+    plugins: [
+        // убедитесь что подключили плагин!
+        new VueLoaderPlugin()
+    ],
     resolve: {
         alias: {
             'vue$': 'vue/dist/vue.esm.js'
@@ -38,7 +50,6 @@ module.exports = {
     },
     devtool: '#eval-source-map'
 }
-
 if (process.env.NODE_ENV === 'production') {
     module.exports.devtool = '#source-map'
     module.exports.plugins = (module.exports.plugins || []).concat([
@@ -58,3 +69,9 @@ if (process.env.NODE_ENV === 'production') {
         })
     ])
 }
+
+
+
+
+
+

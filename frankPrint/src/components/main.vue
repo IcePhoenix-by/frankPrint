@@ -197,97 +197,118 @@
                 </div>
             </section>
             <section>
-
-                <v-layout column align-center>
-
-                    <h1 style="font-size: 40; color: black;">Наша продукция и услуги</h1>
-                    <div class="gradient grpelem" id="u2623"></div>
-                    <div>Мы компания которая предоставляет услуги печати на всевозможных вещах, тащи сюда любимую вещь, мы подумаем что с ней можно сделать.</div>
+                <template>
                     <div>
-                        <div class="table-users">
-                            <div class="header">Толстовки/майки</div>
+                        <v-toolbar color="grey"
+                                   dark
+                                   tabs>
+                            <v-toolbar-title style="display:inline-block;">Наши расценки</v-toolbar-title>
+                            <v-tabs slot="extension"
+                                    v-model="tab"
+                                    color="grey"
+                                    grow>
+                                <v-tabs-slider color="yellow"></v-tabs-slider>
 
-                            <table cellspacing="0">
-                                <tr>
-                                    <th>Количество</th>
-                                    <th>Цены</th>
-                                    <th>Скидка</th>
-                                </tr>
+                                <v-tab :key="7">
+                                    Толстовки/майки
+                                </v-tab>
+                                <v-tab :key="1">
+                                    Разное
+                                </v-tab>
+                            </v-tabs>
+                        </v-toolbar>
 
-                                <tr>
-                                    <td>1-10</td>
-                                    <td>20$</td>
-                                    <td>20%</td>
+                        <v-tabs-items v-model="tab" style="display: flex;
+        justify-content: center;
+        align-items: center;" >
+                            <v-tab-item :key="7" style="width:50%;display: inline-block;">
+                                <v-card flat>
+                                    <v-card-text>
+                                        <table cellspacing="0">
+                                            <tr>
+                                                <th>Количество</th>
+                                                <th>Цены</th>
+                                                <th>Скидка</th>
+                                            </tr>
 
-                                </tr>
+                                            <tr>
+                                                <td>1-10</td>
+                                                <td>20$</td>
+                                                <td>20%</td>
 
-
-                                <tr>
-                                    <td>1-10</td>
-                                    <td>20$</td>
-                                    <td>20%</td>
-
-                                </tr>
-
-                                <tr>
-                                    <td>1-10</td>
-                                    <td>20$</td>
-                                    <td>20%</td>
-
-                                </tr>
-
-                                <tr>
-                                    <td>1-10</td>
-                                    <td>20$</td>
-                                    <td>20%</td>
-
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="table-users">
-                            <div class="header">Разное</div>
-
-                            <table cellspacing="0">
-                                <tr>
-                                    <th>Количество</th>
-                                    <th>Цены</th>
-                                    <th>Скидка</th>
-                                </tr>
-
-                                <tr>
-                                    <td>1-10</td>
-                                    <td>20$</td>
-                                    <td>20%</td>
-
-                                </tr>
+                                            </tr>
 
 
-                                <tr>
-                                    <td>1-10</td>
-                                    <td>20$</td>
-                                    <td>20%</td>
+                                            <tr>
+                                                <td>1-10</td>
+                                                <td>20$</td>
+                                                <td>20%</td>
 
-                                </tr>
+                                            </tr>
 
-                                <tr>
-                                    <td>1-10</td>
-                                    <td>20$</td>
-                                    <td>20%</td>
+                                            <tr>
+                                                <td>1-10</td>
+                                                <td>20$</td>
+                                                <td>20%</td>
 
-                                </tr>
+                                            </tr>
 
-                                <tr>
-                                    <td>1-10</td>
-                                    <td>20$</td>
-                                    <td>20%</td>
+                                            <tr>
+                                                <td>1-10</td>
+                                                <td>20$</td>
+                                                <td>20%</td>
 
-                                </tr>
-                            </table>
-                        </div>
+                                            </tr>
+                                        </table>
+                                    </v-card-text>
+                                </v-card>
+                            </v-tab-item>
+                            <v-tab-item :key="1">
+                                <v-card flat>
+                                    <v-card-text style="width:50%;display: inline-block;">
+                                        <table cellspacing="0">
+                                            <tr>
+                                                <th>Количество00</th>
+                                                <th>Цены</th>
+                                                <th>Скидка</th>
+                                            </tr>
+
+                                            <tr>
+                                                <td>1-10</td>
+                                                <td>20$</td>
+                                                <td>20%</td>
+
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>1-10</td>
+                                                <td>20$</td>
+                                                <td>20%</td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>1-10</td>
+                                                <td>20$</td>
+                                                <td>20%</td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>1-10</td>
+                                                <td>20$</td>
+                                                <td>20%</td>
+
+                                            </tr>
+                                        </table>
+                                    </v-card-text>
+                                </v-card>
+                            </v-tab-item>
+                        </v-tabs-items>
                     </div>
-                </v-layout>
-            </section>
-
+                </template>
+</section>
             <section style="background-color:lightgrey  ;">
                 <v-container grid-list-xl>
                     <v-layout row wrap justify-center class="my-5">
@@ -360,7 +381,7 @@
             <section>
 
             </section>
-            <footer style="background: slateblue;">
+            <footer style="background: grey;">
                 <div class="container">
                     <div class="footer-col"><span>frankPrint @2018</span></div>
                     <div class="footer-col">
@@ -664,6 +685,7 @@
                 mask:'+375(##)###-##-##',
                 valuePhone: '+375',
                 dialog: false,
+                tab:null,
                 mainIcon: 'call',
                 tabs: null,
                 text: ['<table class="table table-sm table-dark"> <thead> <tr> <th scope="col">#</th> <th scope="col">First</th> <th scope="col">Last</th> <th scope="col">Handle</th> </tr> </thead> <tbody> <tr> <th scope="row">1</th> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr> <tr> <th scope="row">2</th> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr> <tr> <th scope="row">3</th> <td colspan="2">Larry the Bird</td> <td>@twitter</td> </tr> </tbody></table>'
