@@ -1,91 +1,77 @@
 ﻿<template>
     <v-app light>
-         <!--<v-toolbar light color="light" style="position:absolute;top:0;background:rgba(0,0,0,.5);z-index:1000;">
-
-            <v-toolbar-title id="logoText">frankPrint</v-toolbar-title>
-          
-            <div id="logoContacts">
-                <div style="display:flex;">
-                    <svg height="45px" width="45px">
-                        <use xlink:href="#vk" />
-                    </svg>
-                    <svg version="1.1" id="Layer_1" height="40px" width="40px" x="0px" y="0px" viewBox="0 0 551.034 551.034" style="enable-background:new 0 0 551.034 551.034;" xml:space="preserve"> <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)"> <stop offset="0" style="stop-color:#E09B3D" /> <stop offset="0.3" style="stop-color:#C74C4D" /> <stop offset="0.6" style="stop-color:#C21975" /> <stop offset="1" style="stop-color:#7024C4" /></linearGradient> <path style="fill:url(#SVGID_1_);" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z" /> <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)"> <stop offset="0" style="stop-color:#E09B3D" /> <stop offset="0.3" style="stop-color:#C74C4D" /> <stop offset="0.6" style="stop-color:#C21975" /> <stop offset="1" style="stop-color:#7024C4" /></linearGradient> <path style="fill:url(#SVGID_2_);" d="M275.517,133C196.933,133,133,196.933,133,275.516s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083C362.6,323.611,323.611,362.6,275.517,362.6z" /> <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="418.31" y1="4.57" x2="418.31" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)"> <stop offset="0" style="stop-color:#E09B3D" /> <stop offset="0.3" style="stop-color:#C74C4D" /> <stop offset="0.6" style="stop-color:#C21975" /> <stop offset="1" style="stop-color:#7024C4" /></linearGradient> <circle style="fill:url(#SVGID_3_);" cx="418.31" cy="134.07" r="34.15" /></svg>
-
-                    <div>
-                        <div>+375 (29) 6-038-038</div>
-
-                        <div>frank.print@mail.ru</div>
-                    </div>
-                </div>
-            </div>
-        </v-toolbar>-->
-
 
         <header  style="position:absolute;top:0;background:rgba(0, 0, 0, 0.61);z-index:1000; padding:0;">
-            <nav class="container">
-                
-
-                <div id="logoText" style="flex-grow: 1;display:flex;flex-direction:column;align-items:center;line-height:20px">
-
+            <nav style="margin-left:0;margin-right:0;    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;">
+                <div id="logoText" style="display:flex;flex-direction:column;line-height:20px;font-size:60px;">
                     <div>frank</div>
-
-                    <div style=" font-size: 20px; font-family:'Times New Roman'">print </div>
                 </div>
-
+                <div style="padding-left:20px;color:white;max-width: 350px;font-size:20px;line-height: 20px;">
+                    Изготовление брендированной промопродукции
+                </div>
                 <div class="nav-toggle"><span></span></div>
                 <ul id="menu" style="align-items:center; justify-content: center;">
                     <li><a href="">Наши работы</a></li>
-                    <li><a href="">Цены</a></li>
-                    <li><a href="">Напишите нам</a></li>
+                    <li><a href="">Отзывы</a></li>
+                    <li><a href="">Наша продукция</a></li>
+                    <li><a href="">О нас</a></li>
                 </ul>
-
                 <div id="logoContacts">
                     <div style="display:flex;align-items:center;">
                         <svg height="45px" width="45px">
                             <use xlink:href="#vk" />
                         </svg>
                         <svg viewBox="0 0 50 50" fill="#ffffff" width="50px" height="50px">
-                            <path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible" fill="#ffffff" />
+                            <path style="stroke:white; stroke-width:1;line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible" fill="#ffffff" />
                         </svg>
                         <div style="color:white;font-weight:bold;">
-                            <div>+375 (29) 6-038-038</div>
+                            <div>
+                                <div style="min-width: 140px;">+375 (29) 6-038-038</div>
+                                <div style="min-width: 140px;">+375 (29) 661-20-22</div>
+                            </div>
                             <div>frank.print@mail.ru</div>
                         </div>
                     </div>
                 </div>
-
             </nav>
         </header>
 
         <v-content>
             <section>
                 <v-parallax src="assets/section.jpg" height="600">
-                    <v-layout column
-                              align-center
-                              justify-center
-                              class="white--text">
-                       
+                    <v-card class="black--text" style="width:400px; height:450px; align-self: center;background:rgba(255, 255, 255, 0.61);flex-direction:column;">
+                            <div class="headline" style="color:black;">
+                                <div style="display:flex; flex-direction:column;align-items:center;justify-content:center;">
+                                    <div>Нанесение</div>
+                                    <div>логотипа</div>
+                                    <div> Любые виды печати </div>
+                                    <div>для Вашей компании</div>
+                                </div>
 
-                        <v-card color="blue-grey darken-2" class="white--text" style="max-width: 250px; align-self: flex-end; margin-right:20%">
-                            <v-card-title primary-title>
-                                <div class="headline">Надоели однотонные вещи? Хочешь разукрасить все свои вещи? Тогда тебе сюда.</div>
-                            </v-card-title>
-                        </v-card>
-                        <div>
+                            </div>
+                            <v-layout column
+                                      align-center
+                                      justify-center
+                                      class="white--text">
+                                <v-btn class="blue lighten-2 mt-5"
+                                       dark
+                                       large
+                                       href="/pre-made-themes">
+                                    Заказать!
+                                </v-btn>
 
-                        </div>
-                        <v-btn class="blue lighten-2 mt-5"
-                               dark
-                               large
-                               href="/pre-made-themes">
-                            Хочу принт!
-                        </v-btn>
-                    </v-layout>
+                            </v-layout>
+                    </v-card>
+                 
                 </v-parallax>
             </section>
 
             <section style="text-align: center;">
-                <div style="font-size:30px;margin-top:10px;">Фотогалерея</div>
+                <div style="font-size:40px;margin-top:10px; font:bold;">Наши работы</div>
                 <photo-grid :box-height="'500px'" :box-width="'500px'" :excess-text="'+ {{count}}'" v-on:clickExcess="triggerClick">
                     <img v-for="imahe in images" v-bind:src="imahe.url" />
                 </photo-grid>
@@ -377,14 +363,14 @@
             <section>
 
             </section>
-            <footer style="background: grey;">
+            <footer style="background-color:black;">
                 <div class="container">
                     <div class="footer-col"><span>frankPrint @2018</span></div>
                     <div class="footer-col">
                         <div class="social-bar-wrap">
-                            <svg width="20px" height="20px" viewBox="0 0 576 512"><path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z" /></svg>
-                            <svg width="20px" height="20px" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" /></svg>
-                            <svg width="20px" height="20px" viewBox="0 0 448 512"><path d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z" /></svg>
+                            <svg width="20px" height="20px" style="fill: white;" viewBox="0 0 576 512"><path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z" /></svg>
+                            <svg width="20px" height="20px"  style="fill: white;" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" /></svg>
+                            <!--<svg width="20px" height="20px"  style="fill: white;" viewBox="0 0 448 512"><path d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z" /></svg>-->
                         </div>
                     </div>
                     <div class="footer-col">
